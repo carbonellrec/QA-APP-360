@@ -1,0 +1,226 @@
+{
+  "main": {
+    "id": "ca229d5732d4a4c9",
+    "type": "split",
+    "children": [
+      {
+        "id": "213404730e4b81ae",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e4ed602170145e5e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "10 - Novos Casos de Uso/cu-040-gestao-de-parceiros-comerciais.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "cu-040-gestao-de-parceiros-comerciais"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "135c9aa1e30ad054",
+    "type": "split",
+    "children": [
+      {
+        "id": "910e5be98829c539",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4277fdd436cad2a6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de arquivos"
+            }
+          },
+          {
+            "id": "ac63ec6bb5bad48f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Procurar"
+            }
+          },
+          {
+            "id": "7899b603ee8ab464",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ccb3f8d8211a7347",
+    "type": "split",
+    "children": [
+      {
+        "id": "cc05bdc15ee55c8a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ffb3aaca62e501b9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "09 - Novos Requisitos/rf-051-cms-home-e-curadoria.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Links inversos para rf-051-cms-home-e-curadoria"
+            }
+          },
+          {
+            "id": "1f1375a7c61c16bc",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "09 - Novos Requisitos/rf-051-cms-home-e-curadoria.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Links de saída para rf-051-cms-home-e-curadoria"
+            }
+          },
+          {
+            "id": "7d69578e0754e30b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "c5d0b9046f38f42a",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas as propriedades"
+            }
+          },
+          {
+            "id": "cde84adde8c99788",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "09 - Novos Requisitos/rf-051-cms-home-e-curadoria.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Sumário de rf-051-cms-home-e-curadoria"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Criar nova base": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "e4ed602170145e5e",
+  "lastOpenFiles": [
+    "Sem título.canvas",
+    "10 - Novos Casos de Uso/cu-040-gestao-de-parceiros-comerciais.md",
+    "resoluções/rf-044-gestao-de-agencias-CORRIGIDO.md",
+    "09 - Novos Requisitos/rf-044-gestao-de-agencias.md",
+    "09 - Novos Requisitos/rf-052-central-de-notificacoes.md",
+    "09 - Novos Requisitos/rf-051-cms-home-e-curadoria.md",
+    "resoluções/rf-044-cu030-alteracoes-destacadas.pdf",
+    "resoluções/cu-030-gestao-de-agencias-CORRIGIDO.md",
+    "QA novos requisitos/QA — Verificação de novos Requisitos.md",
+    "resoluções",
+    "Nova pasta",
+    "Sem título.md",
+    "QA novos requisitos",
+    "Sem título.base",
+    "09 - Novos Requisitos/rf-050-cms-institucional.md",
+    "2026-06-01.md",
+    "Bem-vindo.md",
+    "08 - Assinaturas/assinaturas.md",
+    "08 - Assinaturas",
+    "07 - Entregas do Projeto/entregas-do-projeto.md",
+    "07 - Entregas do Projeto",
+    "06 - Anexos/anexos.md",
+    "06 - Anexos",
+    "05 - Casos de Uso/visao-geral-casos-de-uso.md",
+    "05 - Casos de Uso/cu-029-gerenciar-imagens-da-atracao.md",
+    "05 - Casos de Uso/cu-028-realizar-checklist-de-visita.md",
+    "05 - Casos de Uso/cu-027-validar-ingresso-leitura-qr-code.md",
+    "05 - Casos de Uso/cu-026-autorizar-registrar-repasse.md",
+    "05 - Casos de Uso/cu-025-solicitar-repasse.md",
+    "05 - Casos de Uso/cu-024-visualizar-resumo-das-despesas.md",
+    "05 - Casos de Uso/cu-023-visualizar-negociacao-financeira.md",
+    "05 - Casos de Uso/cu-022-gerenciar-usuarios-da-atracao.md",
+    "05 - Casos de Uso/cu-021-visualizar-graficos-e-analytics.md",
+    "05 - Casos de Uso/cu-020-gerar-qr-code-de-cupom.md",
+    "05 - Casos de Uso",
+    "04 - Requisitos Na╠âo Funcionais"
+  ]
+}

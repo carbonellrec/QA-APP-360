@@ -1,0 +1,90 @@
+Introdução
+Objetivo
+Objetivo do Sistema
+Escopo
+Escopo Positivo (Incluso nesta versão)
+Escopo Negativo (Exclusões)
+Histórico de Revisões
+Garantia
+Definições, Acrônimos e Abreviações
+Referências
+Descrição Geral do Sistema
+Funcionalidades do Produto
+Arquitetura de Módulos
+Módulos do Backoffice (Administrador)
+Submódulos de Gestão de Atrações
+Usuários e Perfis
+Classificação de Usuários
+Descrição dos Perfis
+Matriz de Permissões – Backoffice
+Matriz de Permissões - Submódulos de Gestão de Atrações
+Regras de Vinculação de Perfis
+Restrições
+Suposições e Dependências
+Requisitos Funcionais
+Autenticação com E-mail e Senha
+Tela Inicial
+Dashboard – Administrador
+Detalhes da Atração / Totais da Atração - Administrador
+Tela de Perfil
+Gestão de Usuários - Administrador
+Cadastro de Usuários - Administrador
+Tela Gestão de Contratos - Administrador
+Incluir Contratos - Administrador
+Configuração Comerciais - Administrador
+Informações Financeiras (Administrador)
+Tela de Gestão de Atrações - Administrador
+Tela de Gestão de Atrações/Adicionar Atração - Administrador
+Detalhes da Atrações/Categorias – Administrador
+Detalhes da Atrações/Pesquisar Ingresso – Administrador
+Detalhes da Atrações/Pesquisar Ingresso/Detalhes – Administrador
+Detalhes da Atrações/Gestão de Ingressos – Administrador.
+Detalhes da Atrações/Gestão de Cupons – Administrador
+Detalhes da Atrações/Gráficos Analytics - Administrador
+Detalhes da Atrações/Editar da Atração - Administrador
+Detalhes da Atrações/Usuários - Administrador
+Detalhes da Atrações/Gestão Financeira/Relatórios da Atração- Administrador
+Detalhes da Atrações/Gestão Financeira/Negociação Financeira/ - Administrador
+Detalhes da Atrações/Gestão Financeira/Resumo das Despesas - Administrador
+Detalhes da Atrações/Tela de Validação de Ingressos
+Requisitos Não Funcionais
+Desempenho
+Usabilidade
+Segurança
+Portabilidade e Compatibilidade
+Confiabilidade e Disponibilidade
+Manutenibilidade e Evolução
+Armazenamento e Dados
+Casos de Uso
+CU-001 - Realizar Login
+CU-002 - Realizar Logout
+CU-003 - Recuperar Senha
+CU-004 - Visualizar Dashboard
+CU-005 - Gerenciar Perfil
+CU-006 - Cadastrar Usuário
+CU-007 - Editar Usuário
+CU-008 - Gerenciar Contratos
+CU-009 - Cadastrar Condições Comerciais
+CU-010 - Cadastrar Informações Financeiras
+CU-011 - Cadastrar Atração
+CU-012 - Editar Atração
+CU-013 - Visualizar Atrações no Mapa
+CU-014 - Criar Pacote de Ingressos
+CU-015 - Visualizar Totais da Atração
+CU-016 - Gerenciar Categorias da Atração
+CU-017 - Pesquisar Ingresso
+CU-018 - Gerenciar Ingressos da Atração
+CU-019 - Gerenciar Cupons da Atração
+CU-020 - Gerar QR Code de Cupom
+CU-021 - Visualizar Gráficos e Analytics
+CU-022 - Gerenciar Usuários da Atração
+CU-023 - Visualizar Negociação Financeira
+CU-024 - Visualizar Resumo das Despesas
+CU-025 - Solicitar Repasse
+CU-026 - Autorizar/Registrar Repasse
+CU-027 - Validar Ingresso (Leitura QR Code)
+CU-028 - Realizar Checklist de Visita
+CU-029 - Gerenciar Imagens da Atração
+Anexos
+Entregas do Projeto
+Assinaturas

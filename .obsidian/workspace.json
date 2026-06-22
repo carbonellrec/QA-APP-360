@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10 - Novos Casos de Uso/cu-040-gestao-de-parceiros-comerciais.md",
+                "file": "2026-06-01.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "cu-040-gestao-de-parceiros-comerciais"
+              "title": "2026-06-01"
             }
           }
         ]
@@ -186,15 +186,19 @@
   },
   "active": "e4ed602170145e5e",
   "lastOpenFiles": [
-    "Sem título.canvas",
+    "QA novos requisitos/QA — Verificação de novos Requisitos.md",
+    "resoluções/RF 044 gestao-de-agencias/rf-044-gestao-de-agencias-CORRIGIDO.md",
+    "resoluções/RF 044 gestao-de-agencias/rf-044-cu030-alteracoes-destacadas.pdf",
+    "resoluções/RF 044 gestao-de-agencias/cu-030-gestao-de-agencias-CORRIGIDO.md",
+    "10 - Novos Casos de Uso/cu-039-tela-inicial-por-perfil-backoffice.md",
     "10 - Novos Casos de Uso/cu-040-gestao-de-parceiros-comerciais.md",
+    "Sem título.canvas",
     "resoluções/rf-044-gestao-de-agencias-CORRIGIDO.md",
     "09 - Novos Requisitos/rf-044-gestao-de-agencias.md",
     "09 - Novos Requisitos/rf-052-central-de-notificacoes.md",
     "09 - Novos Requisitos/rf-051-cms-home-e-curadoria.md",
     "resoluções/rf-044-cu030-alteracoes-destacadas.pdf",
     "resoluções/cu-030-gestao-de-agencias-CORRIGIDO.md",
-    "QA novos requisitos/QA — Verificação de novos Requisitos.md",
     "resoluções",
     "Nova pasta",
     "Sem título.md",
@@ -218,9 +222,6 @@
     "05 - Casos de Uso/cu-024-visualizar-resumo-das-despesas.md",
     "05 - Casos de Uso/cu-023-visualizar-negociacao-financeira.md",
     "05 - Casos de Uso/cu-022-gerenciar-usuarios-da-atracao.md",
-    "05 - Casos de Uso/cu-021-visualizar-graficos-e-analytics.md",
-    "05 - Casos de Uso/cu-020-gerar-qr-code-de-cupom.md",
-    "05 - Casos de Uso",
-    "04 - Requisitos Na╠âo Funcionais"
+    "05 - Casos de Uso"
   ]
 }

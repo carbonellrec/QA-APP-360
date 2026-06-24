@@ -91,7 +91,7 @@ Perfis com Acesso: Administrador (cadastro manual no backoffice); Visitante não
 | RN-045.01 | O CNPJ deve ser único no sistema; o sistema deve rejeitar cadastros com CNPJ já existente e exibir mensagem de erro específica. A unicidade deve ser verificada independentemente do formato (numérico ou alfanumérico) em que o CNPJ tenha sido originalmente cadastrado |
 | RN-045.02 | O e-mail do responsável deve ser único no sistema e torna-se o login da Agência no backoffice após aprovação |
 | RN-045.03 | Agências cadastradas via auto-cadastro recebem automaticamente o status "Pendente de Aprovação" e só podem acessar o backoffice após aprovação pelo Administrador (via RF-044) |
-| RN-045.04 | Agências cadastradas manualmente pelo Administrador recebem status imediato "Ativa" para fins de acesso ao backoffice, sem necessidade de aprovação. A liberação para realizar vendas segue a regra de contrato ativo descrita em RN-045.13 |
+| RN-045.04 | Agências cadastradas manualmente pelo Administrador recebem status imediato "Aguardando Contrato" para fins de acesso ao backoffice, sem necessidade de aprovação. A liberação para realizar vendas segue a regra de contrato ativo descrita em RN-045.13 |
 | RN-045.05 | A senha provisória definida pelo Admin no cadastro deve ser redefinida pelo usuário no primeiro acesso ao backoffice |
 | RN-045.06 | A senha deve ter no mínimo 8 caracteres, contendo pelo menos uma letra maiúscula, uma letra minúscula, um número e um caractere especial |
 | RN-045.07 | O preenchimento automático de endereço via CEP não deve impedir a edição manual dos campos pelo usuário |

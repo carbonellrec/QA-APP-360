@@ -8,7 +8,7 @@ Perfis com Acesso: Administrador (cadastro manual no backoffice); Visitante não
 
 **Prioridade:** Alta (Essencial)
 
-**Descrição:** O sistema deve permitir o cadastro e a edição de agências por dois fluxos distintos: (1) o Administrador cria ou edita uma agência manualmente no backoffice, acessando o formulário pelo botão "Adicionar Agência" na tela de Gestão de Agências (RF-044); (2) o Visitante não autenticado realiza o auto-cadastro pelo Portal Público (WF-004A), submetendo os dados da empresa, do responsável e os documentos necessários — após o envio, o cadastro fica com status "Pendente de Aprovação" até revisão e aprovação do Administrador. O formulário é organizado em três etapas: Dados da Empresa, Dados do Responsável e Dados Bancários. Em ambos os fluxos (cadastro manual pelo Admin ou auto-cadastro aprovado), a agência recebe status "Ativa" para fins de acesso ao backoffice, mas a liberação para realizar vendas depende da conclusão do Contrato de Agência (RF-008 → DocuSign), conforme detalhado na RN-045.13.
+**Descrição:** O sistema deve permitir o cadastro e a edição de agências por dois fluxos distintos: (1) o Administrador cria ou edita uma agência manualmente no backoffice, acessando o formulário pelo botão "Adicionar Agência" na tela de Gestão de Agências (RF-044); (2) o Visitante não autenticado realiza o auto-cadastro pelo Portal Público (WF-004A), submetendo os dados da empresa, do responsável e os documentos necessários — após o envio, o cadastro fica com status "Pendente de Aprovação" até revisão e aprovação do Administrador. O formulário é organizado em três etapas: Dados da Empresa, Dados do Responsável e Dados Bancários. Em ambos os fluxos (cadastro manual pelo Admin ou auto-cadastro aprovado), a agência recebe status "Ativo" para fins de acesso ao backoffice, mas a liberação para realizar vendas depende da conclusão do Contrato de Agência (RF-008 → DocuSign), conforme detalhado na RN-045.13.
 
 **Requisitos Detalhados**
 
@@ -100,7 +100,7 @@ Perfis com Acesso: Administrador (cadastro manual no backoffice); Visitante não
 | RN-045.10 | O campo "Titular da Conta" deve corresponder ao nome jurídico vinculado ao CNPJ da agência para fins de validação financeira |
 | RN-045.11 | A validação de CPF deve verificar o formato e os dígitos verificadores; CPFs matematicamente inválidos devem ser rejeitados com mensagem de erro. A validação de CNPJ deve seguir a regra descrita em RN-045.14, contemplando tanto o formato numérico vigente quanto o formato alfanumérico a ser adotado pela Receita Federal a partir de julho de 2026 |
 | RN-045.12 | Arquivos de documentos enviados devem ser armazenados com controle de versão; ao reeditar e renviar um documento, a versão anterior deve ser mantida no histórico |
-| RN-045.13 | O cadastro com status "Ativa" concede à agência apenas o direito de autenticação e acesso ao backoffice (visualização e configuração). A permissão para realizar vendas (seus agentes emitirem ingressos) é controlada de forma independente pelo status do Contrato de Agência no módulo RF-008: enquanto o contrato não atingir o status "Ativo" (todas as assinaturas via DocuSign coletadas), a agência permanece com Substatus "Bloqueada para Vendas"; ao ser confirmado o contrato ativo, o sistema altera automaticamente o Substatus para "Liberada para Vendas" |
+| RN-045.13 | O cadastro com status "Aguardando contrato" concede à agência apenas o direito de autenticação e acesso ao backoffice (visualização e configuração). A permissão para realizar vendas (seus agentes emitirem ingressos) é controlada de forma independente pelo status do Contrato de Agência no módulo RF-008: enquanto o contrato não atingir o status "Ativo" (todas as assinaturas via DocuSign coletadas), a agência permanece com Substatus "Bloqueada para Vendas"; ao ser confirmado o contrato ativo, o sistema altera automaticamente o Substatus para "Liberada para Vendas" |
 | RN-045.14 | O sistema deve validar o CNPJ de acordo com o formato vigente na data do cadastro: (a) até junho de 2026 — formato numérico XX.XXX.XXX/XXXX-XX, com validação completa dos dígitos verificadores conforme algoritmo módulo 11 da Receita Federal; (b) a partir de julho de 2026 — formato alfanumérico (letras e números nas 12 primeiras posições, mantendo os 2 dígitos verificadores finais numéricos), conforme novo algoritmo de validação a ser publicado pela Receita Federal. O sistema deve aceitar ambos os formatos durante o período de transição, identificando automaticamente qual algoritmo de validação aplicar com base no padrão de caracteres informado |
 
 **Critérios de Aceitação**
@@ -112,16 +112,16 @@ Perfis com Acesso: Administrador (cadastro manual no backoffice); Visitante não
 | CA-045.01 | Admin clica em "Adicionar Agência" na RF-044 | Formulário de cadastro em branco é exibido na Etapa 1 |
 | CA-045.02 | Admin preenche Etapa 1 e clica "Próximo" sem preencher campo obrigatório (ex.: CNPJ) | Mensagem de erro exibida abaixo do campo; navegação bloqueada |
 | CA-045.03 | Admin informa CNPJ já cadastrado no sistema | Mensagem "CNPJ já cadastrado" exibida; navegação bloqueada |
-| CA-045.04 | Admin preenche todas as etapas e clica "Salvar" | Agência criada com status "Ativa" (acesso ao backoffice); rascunho de Contrato de Agência gerado em RF-008 com Substatus "Bloqueada para Vendas"; e-mail de boas-vindas enviado ao responsável com senha provisória e informação sobre o contrato pendente |
+| CA-045.04 | Admin preenche todas as etapas e clica "Salvar" | Agência criada com status "Aguardando contrato" (acesso ao backoffice); rascunho de Contrato de Agência gerado em RF-008 com Substatus "Bloqueada para Vendas"; e-mail de boas-vindas enviado ao responsável com senha provisória e informação sobre o contrato pendente |
 | CA-045.05 | Admin informa e-mail já existente no sistema | Mensagem "E-mail já cadastrado" exibida; navegação bloqueada |
-| CA-045.19 | Contrato de Agência gerado na CA-045.04 atinge status "Ativo" no RF-008 (assinaturas DocuSign concluídas) | Sistema altera automaticamente o Substatus da agência de "Bloqueada para Vendas" para "Liberada para Vendas"; agentes vinculados passam a poder realizar vendas |
+| CA-045.19 | Contrato de Agência gerado na CA-045.04 atinge status "Ativo" no RF-008 (assinaturas DocuSign concluídas) | Sistema altera automaticamente o Substatus da agência de "Bloqueada para Vendas" e e status "Aguardando contrato para substatus "Liberada para Vendas" e status "ativo"; agentes vinculados passam a poder realizar vendas |
 
 **Fluxo Admin — Edição**
 
 | ID        | Critério | Resultado Esperado |
 |-----------|----------|--------------------|
 | CA-045.06 | Admin seleciona agência existente e aciona "Editar" na RF-044 | Formulário abre em modo edição com dados pré-carregados |
-| CA-045.07 | Admin altera o status da agência de "Pendente de Aprovação" para "Ativa" e salva | Status atualizado; e-mail de atualização enviado ao responsável |
+| CA-045.07 | Admin altera o status da agência de "Pendente de Aprovação" para "Ativo" e salva | Status atualizado; e-mail de atualização enviado ao responsável |
 | CA-045.08 | Admin edita o campo "Nome Fantasia" e salva | Alteração persistida; mensagem de sucesso exibida |
 
 **Fluxo Auto-cadastro — Portal Público**

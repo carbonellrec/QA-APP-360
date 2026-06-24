@@ -22,7 +22,7 @@ Fluxo Principal:
 4. O sistema valida os campos obrigatórios e formatos (CNPJ — numérico ou alfanumérico conforme data vigente —, URL, máscara de telefone) e libera a navegação para a Etapa 2.
 5. O ator preenche Etapa 2 — Dados do Responsável (Nome, CPF, E-mail, Telefone Celular, Idioma Padrão e Senha) e o sistema valida unicidade de e-mail e regras de senha.
 6. O ator preenche Etapa 3 — Dados Bancários (Banco, Tipo de Conta, Agência, Conta, Chave Pix opcional, Titular) e clica em "Salvar".
-7. O sistema persiste o cadastro: no fluxo Admin atribui status "Ativa" (acesso ao backoffice), dispara e-mail de boas-vindas com senha provisória e gera automaticamente o rascunho de Contrato de Agência no módulo RF-008 com Substatus "Bloqueada para Vendas"; no auto-cadastro atribui status "Pendente de Aprovação" e envia e-mail de confirmação de recebimento.
+7. O sistema persiste o cadastro: no fluxo Admin atribui status "Aguardando contrato" (acesso ao backoffice), dispara e-mail de boas-vindas com senha provisória e gera automaticamente o rascunho de Contrato de Agência no módulo RF-008 com Substatus "Bloqueada para Vendas"; e envia e-mail de confirmação de recebimento.
 8. O sistema exibe mensagem de sucesso — no fluxo Admin, informando também que o contrato foi gerado e aguarda assinatura para liberação de vendas — e, no Backoffice, retorna à listagem RF-044.
 
 Fluxos de Exceção:

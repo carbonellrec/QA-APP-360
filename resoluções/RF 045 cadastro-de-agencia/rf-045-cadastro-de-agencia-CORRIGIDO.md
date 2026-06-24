@@ -80,7 +80,7 @@ Perfis com Acesso: Administrador (cadastro manual no backoffice); Visitante não
 | ID        | Requisito |
 |-----------|-----------|
 | RF-045.39 | Após envio pelo auto-cadastro, o sistema deve registrar a agência com status "Pendente de Aprovação" e enviar e-mail de confirmação de recebimento ao responsável |
-| RF-045.40 | Após cadastro criado pelo Admin, o sistema deve registrar a agência com status imediato "Ativa" para fins de acesso ao backoffice e enviar e-mail de boas-vindas ao responsável com a senha provisória. O sistema deve gerar automaticamente, em conjunto com esse cadastro, o rascunho de Contrato de Agência no módulo RF-008 (conforme RN-044.16); a agência **não está liberada para realizar vendas** até que esse contrato atinja status "Ativo" (todas as assinaturas via DocuSign coletadas), conforme RN-045.13 |
+| RF-045.40 | Após cadastro criado pelo Admin, o sistema deve registrar a agência com status imediato "Aguardando Contrato" para fins de acesso ao backoffice e enviar e-mail de boas-vindas ao responsável com a senha provisória. O sistema deve gerar automaticamente, em conjunto com esse cadastro, o rascunho de Contrato de Agência no módulo RF-008 (conforme RN-044.16); a agência **não está liberada para realizar vendas** até que esse contrato atinja status "Ativo" (todas as assinaturas via DocuSign coletadas), conforme RN-045.13 |
 | RF-045.41 | Após edição pelo Admin, o sistema deve salvar as alterações e enviar e-mail de atualização de cadastro ao responsável da agência |
 | RF-045.42 | O sistema deve exibir mensagem de sucesso na tela ao concluir o cadastro ou edição, informando, quando aplicável, que o Contrato de Agência foi gerado e aguarda assinatura para liberação de vendas |
 

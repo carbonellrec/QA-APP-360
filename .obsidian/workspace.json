@@ -11,14 +11,12 @@
             "id": "e4ed602170145e5e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "2026-06-01.md",
-                "mode": "source",
-                "source": false
+                "file": "resoluções/RF 046 gestão de agentes/rf-046-cu032-alteracoes-destacadas.pdf"
               },
-              "icon": "lucide-file",
-              "title": "2026-06-01"
+              "icon": "lucide-file-text",
+              "title": "rf-046-cu032-alteracoes-destacadas"
             }
           }
         ]
@@ -186,12 +184,20 @@
   },
   "active": "e4ed602170145e5e",
   "lastOpenFiles": [
+    "resoluções/RF 056 tela-inicial-por-perfil-backoffice/rf-056-tela-inicial-por-perfil-backoffice.md",
+    "resoluções/RF 056 tela-inicial-por-perfil-backoffice/cu-039-tela-inicial-por-perfil-backoffice.md",
+    "resoluções/RF 056 tela-inicial-por-perfil-backoffice/verificacao-rf056-cu039-alteracoes.pdf",
+    "resoluções/RF 047 Operação Comercial - Agência e Agente/rf-047-operacao-comercial-agencia-agente-CORRIGIDO (1).md",
+    "resoluções/RF 047 Operação Comercial - Agência e Agente/cu-033-operacao-comercial-agencia-agente-CORRIGIDO (1).md",
+    "resoluções/RF 047 Operação Comercial - Agência e Agente/rf-047-cu033-alteracoes-destacadas (1).pdf",
+    "resoluções/RF 046 gestão de agentes/rf-046-gestao-de-agentes-CORRIGIDO.md",
+    "resoluções/RF 045 cadastro-de-agencia/rf-045-cu031-alteracoes-destacadas.pdf",
+    "resoluções/RF 044 gestao-de-agencias/rf-044-cu030-alteracoes-destacadas.pdf",
+    "resoluções/RF 044 gestao-de-agencias/rf-044-gestao-de-agencias-CORRIGIDO.md",
+    "2026-06-01.md",
     "Sem título.base",
     "Sem título.canvas",
-    "2026-06-01.md",
     "QA novos requisitos/QA — Verificação de novos Requisitos.md",
-    "resoluções/RF 044 gestao-de-agencias/rf-044-gestao-de-agencias-CORRIGIDO.md",
-    "resoluções/RF 044 gestao-de-agencias/rf-044-cu030-alteracoes-destacadas.pdf",
     "resoluções/RF 044 gestao-de-agencias/cu-030-gestao-de-agencias-CORRIGIDO.md",
     "10 - Novos Casos de Uso/cu-039-tela-inicial-por-perfil-backoffice.md",
     "10 - Novos Casos de Uso/cu-040-gestao-de-parceiros-comerciais.md",
@@ -210,17 +216,10 @@
     "08 - Assinaturas/assinaturas.md",
     "08 - Assinaturas",
     "07 - Entregas do Projeto/entregas-do-projeto.md",
-    "07 - Entregas do Projeto",
     "06 - Anexos/anexos.md",
-    "06 - Anexos",
     "05 - Casos de Uso/visao-geral-casos-de-uso.md",
     "05 - Casos de Uso/cu-029-gerenciar-imagens-da-atracao.md",
     "05 - Casos de Uso/cu-028-realizar-checklist-de-visita.md",
-    "05 - Casos de Uso/cu-027-validar-ingresso-leitura-qr-code.md",
-    "05 - Casos de Uso/cu-026-autorizar-registrar-repasse.md",
-    "05 - Casos de Uso/cu-025-solicitar-repasse.md",
-    "05 - Casos de Uso/cu-024-visualizar-resumo-das-despesas.md",
-    "05 - Casos de Uso/cu-023-visualizar-negociacao-financeira.md",
-    "05 - Casos de Uso"
+    "05 - Casos de Uso/cu-027-validar-ingresso-leitura-qr-code.md"
   ]
 }

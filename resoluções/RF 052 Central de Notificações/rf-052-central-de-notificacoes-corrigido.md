@@ -29,7 +29,7 @@ Templates — Listagem
 | RF-052.06 | O sistema deve exibir botão "Novo Template" que abre tela de criação                                                               |
 | RF-052.07 | O sistema deve exibir botão "Editar" por template                                                                                  |
 | RF-052.08 | O sistema deve exibir botão "Duplicar" que cria cópia do template com status Inativo por padrão                                   |
-| RF-052.09 | O sistema deve exibir toggle "Ativar/Inativar" por template                                                                        |
+| RF-052.09 | O sistema deve exibir toggle "Ativar/Inativar" por template                                                   |
 | RF-052.10 | O sistema deve permitir busca de templates por nome e filtro por Tipo e Status                                                     |
 
 Templates — Editor de E-mail
@@ -78,6 +78,7 @@ Campanhas — Criação e Gestão
 | RF-052.35 | O sistema deve exibir botão "Cancelar" para campanhas com status "Agendada" (disponível somente antes do horário de envio)           |
 | RF-052.36 | O formulário de criação de campanha deve exibir botão **"Salvar como Rascunho"**, permitindo preservar a configuração sem agendar ou enviar; rascunhos podem ser editados e reaproveitados posteriormente |
 | RF-052.37 | O sistema deve exibir botão **"Duplicar"** por campanha, criando cópia com status Rascunho por padrão; campanhas com status "Cancelada" ou "Enviada" também podem ser duplicadas |
+|RF-052.37A | Ao excluir um template, o sistema deve verificar se há regras de disparo ativas vinculadas; se houver, bloquear a exclusão com mensagem listando as regras afetadas e orientando o Admin a reatribuir outro template antes de excluir |
 
 Histórico de Envios
 
@@ -125,12 +126,13 @@ Regras de Negócio
 | RN-052.05 | Variáveis de template são validadas ao salvar; variável não reconhecida impede salvamento com mensagem de erro                                  |
 | RN-052.06 | Campanhas são enviadas apenas para turistas com **e-mail verificado**                                                                           |
 | RN-052.07 | Push notifications exigem **consentimento explícito** do turista (além do opt-in da categoria de notificação)                                   |
-| RN-052.08 | SLA de entrega: e-mail transacional ≤ **2 minutos**, push ≤ **1 minuto**, e-mail marketing ≤ **15 minutos** após o disparo                     |
+| RN-052.08 | SLA de entrega: e-mail transacional ≤ **2 minutos**, push ≤ **1 minuto**, e-mail marketing ≤ **05 minutos** após o disparo                     |
 | RN-052.09 | Histórico de envios é retido por **12 meses**; registros mais antigos são arquivados automaticamente                                            |
 | RN-052.10 | Campanha agendada pode ser **cancelada somente antes** do horário de envio programado                                                           |
 | RN-052.11 | Duplicar template cria cópia com status **Inativo** por padrão, evitando uso acidental antes de revisão                                        |
 | RN-052.12 | Excluir template não exclui o histórico de envios vinculado; o template aparece como "[Excluído]" no histórico de envios; templates excluídos **não podem ser reaproveitados** — para reutilizar o conteúdo, deve-se duplicar o template antes de excluí-lo |
 | RN-052.13 | **[NOVO]** A condição "Obrigatório" está disponível **exclusivamente para eventos da categoria Transacional**; eventos de Marketing/Opt-in sempre respeitam as preferências do turista (RF-038), sem exceção; nenhuma configuração de regra de disparo pode sobrepor esta restrição |
+| RN-052.14: | O evento 'Lembrete de Visita', embora classificado como Opt-in, possui SLA de entrega de ≤5 minutos por ser sensível ao tempo — o turista precisa receber o lembrete com antecedência suficiente para se organizar; o sistema deve priorizar seu processamento na fila de envio acima de notificações de marketing regulares|
 
 Critérios de Aceitação
 
@@ -156,6 +158,9 @@ Critérios de Aceitação
 | CA-052.18 | **[NOVO]** Criar campanha e clicar em "Salvar como Rascunho" sem definir data de envio       | Campanha salva com status "Rascunho"; pode ser editada e reaproveitada posteriormente                    |
 | CA-052.19 | **[NOVO]** Duplicar campanha com status "Enviada"                                             | Cópia criada com status "Rascunho"; todos os campos copiados; campanha original preservada               |
 | CA-052.20 | **[NOVO]** Segmentar campanha por "Turistas com opt-in ativo para marketing"                  | Estimativa de alcance exibe apenas turistas com opt-in de marketing ativo; campanha enviada somente a esse segmento |
+| CA-052.21: Duplicar campanha com segmentação por categoria de preferência que foi removida → formulário abre com aviso 'Segmentação inválida — revise antes de enviar'; estimativa de alcance exibe 0 |
+| CA-052.22: Tentar excluir template vinculado a regra de disparo ativa → sistema bloqueia
+exclusão e exibe lista das regras afetadas; template não excluído |
 
 Protótipo/Wireframe
 

@@ -123,6 +123,7 @@ Regras de Negócio
 | RN-051.10 | A ordem dos banners no carrossel é determinada pelo campo "Ordem" (menor número = primeiro exibido)                                          |
 | RN-051.11 | **[NOVO]** Para fins de performance e controle de custos com API de terceiros, todas as avaliações obtidas da API do Google Places são armazenadas em tabela de cache local no banco de dados; a exibição no portal consome exclusivamente os dados cacheados, respeitando a periodicidade de atualização configurada (RF-051.27); a API do Google nunca é chamada diretamente no fluxo de requisição do portal |
 | RN-051.12 | **[NOVO]** Quando o cross-sell estiver operando no modo Automático (RN-051.07), o sistema retorna no máximo **4 atrações sugeridas**, priorizando primeiro atrações da mesma categoria e, como segundo critério de desempate, a menor distância geográfica (raio máximo de **50 km**) |
+| RN-051.13 | Monitoramento de falha de sincronização Google: caso a sincronização não obtenha sucesso por um período equivalente a 3 ciclos consecutivos da periodicidade configurada (3 dias para sincronização Diária; 21 dias para sincronização Semanal), o sistema deve exibir alerta no painel administrativo informando a data da última sincronização bem-sucedida. As avaliações do cache permanecem exibidas no portal sem interrupção — a decisão de ocultá-las fica a cargo do Administrador via toggle manual na interface. A data da última atualização das avaliações não é exibida ao turista. |
 
 Critérios de Aceitação
 

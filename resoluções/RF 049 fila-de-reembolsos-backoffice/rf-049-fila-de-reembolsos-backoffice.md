@@ -32,81 +32,83 @@ Campo de Busca e Filtros Avançados
 | RF-049.09 | O painel de filtros avançados deve exibir filtro de Atração (seleção da atração vinculada ao ingresso)                                       |
 | RF-049.10 | O painel de filtros avançados deve exibir filtro de Motivo da Solicitação (lista predefinida de motivos cadastrados pelo turista)             |
 | RF-049.11 | O painel de filtros avançados deve exibir filtro de Faixa de Valor com campos de valor mínimo (R$) e valor máximo (R$)                       |
-| RF-049.41 | O painel de filtros avançados deve exibir filtro de Origem da Solicitação, com seleção múltipla entre: Turista, Agente, Agência ou Administrador (RN-049.17) |
+| RF-049.12 | O painel de filtros avançados deve exibir filtro de Origem da Solicitação, com seleção múltipla entre: Turista, Agente, Agência ou Administrador (RN-049.17) |
+
 
 Tabela da Fila
 
 | ID        | Requisito                                                                                                                                                       |
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| RF-049.12 | A tabela deve exibir as colunas: Checkbox, ID Reembolso, ID Pedido, Turista (nome + e-mail), Atração, Valor (R$), Motivo, Origem, Data Compra, Data Solicitação, SLA, Status |
-| RF-049.13 | Todas as colunas devem exibir ícone de ordenação (ASC/DESC) e permitir reordenação                                                                              |
-| RF-049.14 | O sistema deve exibir paginação com seletor de quantidade por página: 10 (padrão), 20, 50, 100                                                                  |
-| RF-049.15 | Ao clicar em uma linha da tabela (fora do checkbox), o sistema deve abrir o modal de Detalhes e Decisão                                                         |
+| RF-049.13 | A tabela deve exibir as colunas: Checkbox, ID Reembolso, ID Pedido, Turista (nome + e-mail), Atração, Valor (R$), Motivo, Origem, Data Compra, Data Solicitação, SLA, Status |
+| RF-049.14 | Todas as colunas devem exibir ícone de ordenação (ASC/DESC) e permitir reordenação                                                                              |
+| RF-049.15 | O sistema deve exibir paginação com seletor de quantidade por página: 10 (padrão), 20, 50, 100                                                                  |
+| RF-049.16 | Ao clicar em uma linha da tabela (fora do checkbox), o sistema deve abrir o modal de Detalhes e Decisão                                                         |
 
 Indicador de SLA
 
 | ID        | Requisito                                                                                                                                     |
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| RF-049.16 | A coluna SLA deve exibir a quantidade de dias em aberto desde a data da solicitação                                                           |
-| RF-049.17 | O indicador de SLA deve ser colorido: verde para solicitações com até 3 dias, amarelo de 4 a 7 dias, vermelho para mais de 7 dias             |
-| RF-049.18 | A ordenação padrão da tabela deve ser por SLA decrescente para priorizar os casos mais antigos                                                |
+| RF-049.17 | A coluna SLA deve exibir a quantidade de dias em aberto desde a data da solicitação                                                           |
+| RF-049.18 | O indicador de SLA deve ser colorido: verde para solicitações com até 3 dias, amarelo de 4 a 7 dias, vermelho para mais de 7 dias             |
+| RF-049.19 | A ordenação padrão da tabela deve ser por SLA decrescente para priorizar os casos mais antigos                                                |
 
 Ações em Massa via Checkbox
 
 | ID        | Requisito                                                                                                                                     |
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| RF-049.19 | O sistema deve exibir checkbox na primeira coluna para seleção individual e coletiva de solicitações                                          |
-| RF-049.20 | Ao selecionar um ou mais itens, o sistema deve exibir barra de ações com contador "Selecionados X"                                            |
-| RF-049.21 | A barra de ações em massa deve exibir os botões: "Aprovar selecionados", "Rejeitar selecionados" e "Marcar como Em Análise"                   |
-| RF-049.22 | A ação "Rejeitar selecionados" deve exigir preenchimento obrigatório de motivo antes de confirmar                                             |
+| RF-049.20 | O sistema deve exibir checkbox na primeira coluna para seleção individual e coletiva de solicitações                                          |
+| RF-049.21 | Ao selecionar um ou mais itens, o sistema deve exibir barra de ações com contador "Selecionados X"                                            |
+| RF-049.22 | A barra de ações em massa deve exibir os botões: "Aprovar selecionados", "Rejeitar selecionados" e "Marcar como Em Análise"                   |
+| RF-049.23 | A ação "Rejeitar selecionados" deve exigir preenchimento obrigatório de motivo antes de confirmar                                             |
 
 Modal — Seção 1 — Dados da Solicitação
 
 | ID        | Requisito                                                                                                                                     |
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| RF-049.23 | O modal deve exibir os seguintes dados da solicitação: ID Reembolso, ID Pedido, Data da Compra, Data da Solicitação e Dias em Aberto (SLA)    |
-| RF-049.24 | O modal deve exibir os seguintes dados de pagamento: Valor Pago (R$) e Forma de Pagamento (Cartão, PIX ou Google Pay)                        |
-| RF-049.25 | O modal deve exibir os seguintes dados do turista: Nome completo, E-mail e Telefone                                                           |
-| RF-049.40 | Quando a origem da solicitação (RN-049.17) for Agente ou Agência, o modal deve exibir adicionalmente a identificação do usuário solicitante e a justificativa operacional anexada à solicitação (RN-049.19) |
+| RF-049.24 | O modal deve exibir os seguintes dados da solicitação: ID Reembolso, ID Pedido, Data da Compra, Data da Solicitação e Dias em Aberto (SLA)    |
+| RF-049.25 | O modal deve exibir os seguintes dados de pagamento: Valor Pago (R$) e Forma de Pagamento (Cartão, PIX ou Google Pay)                        |
+| RF-049.26 | O modal deve exibir os seguintes dados do turista: Nome completo, E-mail e Telefone                                                           |
+| RF-049.27 | Quando a origem da solicitação (RN-049.17) for Agente ou Agência, o modal deve exibir adicionalmente a identificação do usuário solicitante e a justificativa operacional anexada à solicitação (RN-049.19) |
+| RF-049.28 | Quando o pedido possuir mais de um ingresso e tiver sido encaminhado via cancelamento parcial (RF-047.26), o modal deve listar cada ingresso elegível individualmente, com checkbox de seleção, permitindo ao Administrador aprovar ou rejeitar o reembolso de cada ingresso separadamente.|
 
 Modal — Seção 2 — Dados do Ingresso
 
 | ID        | Requisito                                                                                                                                     |
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| RF-049.26 | O modal deve exibir os dados do ingresso: Atração, Tipo de Ingresso, Data e Hora do Evento (quando aplicável) e QR Code associado            |
-| RF-049.27 | O modal deve exibir o status atual do ingresso: Ativo, Utilizado ou Expirado                                                                  |
-| RF-049.28 | O modal deve exibir o histórico de uso do ingresso com registro de todos os escaneamentos realizados                                          |
+| RF-049.29 | O modal deve exibir os dados do ingresso: Atração, Tipo de Ingresso, Data e Hora do Evento (quando aplicável) e QR Code associado            |
+| RF-049.30 | O modal deve exibir o status atual do ingresso: Ativo, Utilizado ou Expirado                                                                  |
+| RF-049.31 | O modal deve exibir o histórico de uso do ingresso com registro de todos os escaneamentos realizados                                          |
 
 Modal — Seção 3 — Motivo da Solicitação
 
 | ID        | Requisito                                                                                                                                     |
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| RF-049.29 | O modal deve exibir o motivo selecionado pelo turista no momento da solicitação (RF-040), proveniente de lista predefinida                    |
-| RF-049.30 | O modal deve exibir a observação livre digitada pelo turista no momento da solicitação, quando houver                                         |
+| RF-049.32 | O modal deve exibir o motivo selecionado pelo turista no momento da solicitação (RF-040), proveniente de lista predefinida                    |
+| RF-049.33 | O modal deve exibir a observação livre digitada pelo turista no momento da solicitação, quando houver                                         |
 
 Modal — Seção 3.5 — Política de Cancelamento da Atração (Novo)
 
 | ID        | Requisito                                                                                                                                     |
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| RF-049.39 | O modal deve extrair e exibir as regras comerciais de cancelamento da atração vigentes na data da compra, como indexador de suporte à decisão do Administrador (RN-049.20) |
+| RF-049.34 | O modal deve extrair e exibir as regras comerciais de cancelamento da atração vigentes na data da compra, como indexador de suporte à decisão do Administrador (RN-049.20) |
 
 Modal — Seção 4 — Decisão
 
 | ID        | Requisito                                                                                                                                                             |
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| RF-049.31 | A seção de decisão deve oferecer a opção "Aprovar Reembolso" com campo de valor a reembolsar (padrão: valor integral; editável para reembolso parcial)                |
-| RF-049.32 | A seção de aprovação deve exibir campo de método de devolução (automático via gateway ou manual) e campo de observação interna opcional                               |
-| RF-049.33 | Ao confirmar a aprovação: o ingresso deve ser invalidado, o estorno processado, e-mail de confirmação enviado ao turista, e o status alterado para "Aprovado"         |
-| RF-049.34 | A seção de decisão deve oferecer a opção "Rejeitar Reembolso" com campo de motivo obrigatório (lista predefinida com complemento em campo livre)                     |
-| RF-049.35 | A seção de rejeição deve exibir preview do e-mail que será enviado ao turista antes da confirmação                                                                    |
-| RF-049.36 | Ao confirmar a rejeição: o status deve ser alterado para "Rejeitado" e e-mail de rejeição enviado ao turista com motivo e canal de contato para contestação           |
+| RF-049.35 | A seção de decisão deve oferecer a opção "Aprovar Reembolso" com campo de valor a reembolsar (padrão: valor integral; editável para reembolso parcial)                |
+| RF-049.36 | A seção de aprovação deve exibir campo de método de devolução (automático via gateway ou manual) e campo de observação interna opcional                               |
+| RF-049.37 | Ao confirmar a aprovação: o ingresso deve ser invalidado, o estorno processado, e-mail de confirmação enviado ao turista, e o status alterado para "Aprovado"         |
+| RF-049.38 | A seção de decisão deve oferecer a opção "Rejeitar Reembolso" com campo de motivo obrigatório (lista predefinida com complemento em campo livre)                     |
+| RF-049.39 | A seção de rejeição deve exibir preview do e-mail que será enviado ao turista antes da confirmação                                                                    |
+| RF-049.40 | Ao confirmar a rejeição: o status deve ser alterado para "Rejeitado" e e-mail de rejeição enviado ao turista com motivo e canal de contato para contestação           |
 
 Histórico de Ações
 
 | ID        | Requisito                                                                                                                                     |
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| RF-049.37 | O modal deve exibir no rodapé um log de histórico de ações registrando: quem executou a ação, qual ação foi realizada e data/hora             |
-| RF-049.38 | O histórico de ações não deve permitir edição ou exclusão de nenhum registro                                                                  |
+| RF-049.41 | O modal deve exibir no rodapé um log de histórico de ações registrando: quem executou a ação, qual ação foi realizada e data/hora             |
+| RF-049.42 | O histórico de ações não deve permitir edição ou exclusão de nenhum registro                                                                  |
 
 Colunas da Tabela
 
@@ -164,8 +166,10 @@ Regras de Negócio
 | RN-049.14 | A paginação padrão exibe 10 registros por página                                                                                                                            |
 | RN-049.17 | (Origem da Solicitação) O sistema deve registrar a origem da solicitação de reembolso, categorizando-a como: Turista, Agente, Agência ou Administrador                       |
 | RN-049.18 | (Cancelamento por Iniciativa do Administrador) Cancelamentos efetuados diretamente pelo perfil Administrador por motivos de força maior, overbooking ou segurança técnica serão processados de forma mandatória e imediata, aplicando estorno integral ao turista e cancelamento total de quaisquer comissões provisionadas para a cadeia de intermediários, sem necessidade de transitar pela Fila de Reembolsos |
-| RN-049.19 | (Solicitação por Agentes/Agências pós-SLA) Solicitações de cancelamento efetuadas por Agentes ou Agências após o prazo regulamentar de 7 dias serão enviadas para a Fila de Reembolsos do Administrador (RF-049), contendo obrigatoriamente a identificação do usuário solicitante e justificativa operacional anexa               |
-| RN-049.20 | (Visibilidade da Política) O modal de decisão de reembolso deve extrair e exibir as regras comerciais de cancelamento da atração vigentes na data da compra, servindo como indexador de suporte para a tomada de decisão do Administrador                                                                                        |
+| RN-049.19 | (Solicitação por Agentes/Agências pós-SLA) Solicitações de cancelamento efetuadas por Agentes ou Agências após o prazo regulamentar de 7 dias serão enviadas para a Fila de Reembolsos do Administrador (RF-049), contendo obrigatoriamente a identificação do usuário solicitante e justificativa operacional anexa.  |
+| RN-049.20 | Ao aprovar um reembolso na fila, o sistema deve acionar a dedução da comissão correspondente conforme RF-048.05 — o valor da comissão é compensado no próximo período de apuração em aberto da Agência e do Agente vinculados à venda original.|
+| RN-049.21 | (Visibilidade da Política) O modal de decisão de reembolso deve extrair e exibir as regras comerciais de cancelamento da atração vigentes na data da compra, servindo como indexador de suporte para a tomada de decisão do administrador                                                                 |
+
 
 Critérios de Aceitação
 
@@ -189,6 +193,7 @@ Critérios de Aceitação
 | CA-049.16 | Tentar solicitar cancelamento de um ingresso que possui o selo/direito de cancelamento gratuito ativo | O sistema desvia o fluxo da fila manual (RF-049), invalida o ingresso imediatamente e dispara o estorno automático via gateway (RF-040) |
 | CA-049.17 | Administrador realiza cancelamento mandatório por força maior, overbooking ou segurança técnica | Sistema processa de forma imediata sem passar pela fila, com estorno integral ao turista e cancelamento total das comissões provisionadas |
 | CA-049.18 | Agente ou Agência solicita reembolso após o prazo de 7 dias                         | Solicitação aparece na fila com origem "Agente"/"Agência"; modal exibe identificação do solicitante e justificativa operacional anexa |
+|CA-049.19 | Pedido com 3 ingressos entra na fila via cancelamento parcial (RF-047.26) | Modal lista os ingressos elegíveis individualmente com checkbox; Administrador seleciona 2 e aprova; apenas os 2 selecionados são invalidados e têm estorno processado; dedução de comissão proporcional registrada no próximo período (RN-049.20)|
 
 Protótipo/Wireframe
 

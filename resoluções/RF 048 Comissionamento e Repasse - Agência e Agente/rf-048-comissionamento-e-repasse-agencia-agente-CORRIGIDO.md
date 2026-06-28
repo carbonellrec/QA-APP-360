@@ -90,7 +90,7 @@ Ajuste Avulso em Período com Repasse Pago (Administrador)
 | RF-048.39 | O sistema deve disponibilizar ao Administrador a ação "Lançamento Avulso de Crédito/Débito", aplicável ao período de apuração **subsequente em aberto**, para corrigir erros identificados em períodos já pagos |
 | RF-048.40 | O modal de Lançamento Avulso deve exigir: Agência (ou Agente, quando aplicável) de destino, tipo (Crédito ou Débito), valor, período de referência da correção (período pago original) e motivo/justificativa obrigatória |
 | RF-048.41 | Lançamentos avulsos devem ser exibidos de forma destacada no detalhamento do período em que forem aplicados, com referência ao período original que motivou a correção |
-| RF-048.42 | O sistema deve enviar notificação à Agência (e ao Agente, se o lançamento afetar especificamente sua apuração) informando o lançamento avulso aplicado, o motivo e o período de referência da correção |
+| RF-048.42 | Sistema notifica a Agência; se o campo Agente estiver preenchido no lançamento (RF-048.40), o Agente também é notificado obrigatoriamente |
 
 Colunas Adicionais — Detalhamento por Transação
 

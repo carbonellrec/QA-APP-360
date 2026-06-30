@@ -1,41 +1,59 @@
 {
   "main": {
-    "id": "ca229d5732d4a4c9",
+    "id": "bf263336739bd755",
     "type": "split",
     "children": [
       {
-        "id": "213404730e4b81ae",
+        "id": "5f7cae20c8f82ad5",
         "type": "tabs",
         "children": [
           {
-            "id": "e4ed602170145e5e",
+            "id": "04ea2c7b0ec774b1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03 - Requisitos Funcionais/rf-004-detalhes-da-atracao-totais-da-atracao-administrador.md",
+                "file": "Bem-vindo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "rf-004-detalhes-da-atracao-totais-da-atracao-administrador"
+              "title": "Bem-vindo"
+            }
+          },
+          {
+            "id": "b0b14e2f047261b2",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Sem título.canvas",
+                "viewState": {
+                  "x": 0,
+                  "y": 0,
+                  "zoom": 0
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "Sem título"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "135c9aa1e30ad054",
+    "id": "96e82bc341071caa",
     "type": "split",
     "children": [
       {
-        "id": "910e5be98829c539",
+        "id": "aeb27a30601ab9a5",
         "type": "tabs",
         "children": [
           {
-            "id": "4277fdd436cad2a6",
+            "id": "dbcd2386bf11a743",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,7 +66,7 @@
             }
           },
           {
-            "id": "ac63ec6bb5bad48f",
+            "id": "6bdfd0561f8d7df3",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -65,7 +83,7 @@
             }
           },
           {
-            "id": "7899b603ee8ab464",
+            "id": "cfa6d7f86da0d7fd",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -78,23 +96,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 535.5
+    "width": 300
   },
   "right": {
-    "id": "ccb3f8d8211a7347",
+    "id": "d15938176ff08d36",
     "type": "split",
     "children": [
       {
-        "id": "cc05bdc15ee55c8a",
+        "id": "fed201893373fb4d",
         "type": "tabs",
         "children": [
           {
-            "id": "ffb3aaca62e501b9",
+            "id": "0e99545316b638e0",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "09 - Novos Requisitos/rf-051-cms-home-e-curadoria.md",
+                "file": "Sem título.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,25 +122,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Links inversos para rf-051-cms-home-e-curadoria"
+              "title": "Links inversos para Sem título"
             }
           },
           {
-            "id": "1f1375a7c61c16bc",
+            "id": "9f7770c9887baea4",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "09 - Novos Requisitos/rf-051-cms-home-e-curadoria.md",
+                "file": "Sem título.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Links de saída para rf-051-cms-home-e-curadoria"
+              "title": "Links de saída para Sem título"
             }
           },
           {
-            "id": "7d69578e0754e30b",
+            "id": "888213aaf404c603",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -137,7 +155,7 @@
             }
           },
           {
-            "id": "c5d0b9046f38f42a",
+            "id": "61dce7a5a5a76667",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -151,18 +169,18 @@
             }
           },
           {
-            "id": "cde84adde8c99788",
+            "id": "63faf64306d43cd8",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "09 - Novos Requisitos/rf-051-cms-home-e-curadoria.md",
+                "file": "Sem título.canvas",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Sumário de rf-051-cms-home-e-curadoria"
+              "title": "Sumário de Sem título"
             }
           }
         ]
@@ -180,49 +198,13 @@
       "daily-notes:Abrir a nota de hoje": false,
       "templates:Inserir modelo": false,
       "command-palette:Abrir paleta de comandos": false,
-      "bases:Criar nova base": false,
-      "obsidian-git:Open Git source control": false
+      "bases:Criar nova base": false
     }
   },
-  "active": "e4ed602170145e5e",
+  "active": "b0b14e2f047261b2",
   "lastOpenFiles": [
-    "03 - Requisitos Funcionais/rf-002-tela-inicial.md",
-    "03 - Requisitos Funcionais/rf-003-dashboard-administrador.md",
-    "resoluções/RF 047 Operação Comercial - Agência e Agente/rf-047-operacao-comercial-agencia-agente-CORRIGIDO (1).md",
-    "04 - Requisitos Na╠âo Funcionais/requisitos-nao-funcionais.md",
-    "03 - Requisitos Funcionais/rf-021-detalhes-da-atracoes-usuarios-administrador.md",
-    "03 - Requisitos Funcionais/rf-004-detalhes-da-atracao-totais-da-atracao-administrador.md",
-    "03 - Requisitos Funcionais/rf-005-tela-de-perfil.md",
-    "02 - Descric╠ºa╠âo Geral do Sistema/descricao-geral-do-sistema.md",
-    "resoluções/RF 056 tela-inicial-por-perfil-backoffice/rf-056-tela-inicial-por-perfil-backoffice.md",
-    "resoluções/RF 052 Central de Notificações/rf-052-central-de-notificacoes-corrigido.md",
-    "360 resolvido/Sem título.canvas",
-    "360 resolvido/Sem título.md",
-    "360 resolvido/Bem-vindo.md",
-    "360 resolvido",
-    "resoluções/RF 046 gestão de agentes/rf-046-cu032-alteracoes-destacadas.pdf",
-    "resoluções/RF 056 tela-inicial-por-perfil-backoffice/cu-039-tela-inicial-por-perfil-backoffice.md",
-    "resoluções/RF 056 tela-inicial-por-perfil-backoffice/verificacao-rf056-cu039-alteracoes.pdf",
-    "resoluções/RF 047 Operação Comercial - Agência e Agente/cu-033-operacao-comercial-agencia-agente-CORRIGIDO (1).md",
-    "resoluções/RF 047 Operação Comercial - Agência e Agente/rf-047-cu033-alteracoes-destacadas (1).pdf",
-    "resoluções/RF 046 gestão de agentes/rf-046-gestao-de-agentes-CORRIGIDO.md",
-    "resoluções/RF 045 cadastro-de-agencia/rf-045-cu031-alteracoes-destacadas.pdf",
-    "resoluções/RF 044 gestao-de-agencias/rf-044-cu030-alteracoes-destacadas.pdf",
-    "resoluções/RF 044 gestao-de-agencias/rf-044-gestao-de-agencias-CORRIGIDO.md",
-    "2026-06-01.md",
-    "Sem título.base",
+    "Sem título.md",
     "Sem título.canvas",
-    "QA novos requisitos/QA — Verificação de novos Requisitos.md",
-    "resoluções/RF 044 gestao-de-agencias/cu-030-gestao-de-agencias-CORRIGIDO.md",
-    "10 - Novos Casos de Uso/cu-039-tela-inicial-por-perfil-backoffice.md",
-    "10 - Novos Casos de Uso/cu-040-gestao-de-parceiros-comerciais.md",
-    "resoluções/rf-044-gestao-de-agencias-CORRIGIDO.md",
-    "09 - Novos Requisitos/rf-044-gestao-de-agencias.md",
-    "09 - Novos Requisitos/rf-052-central-de-notificacoes.md",
-    "09 - Novos Requisitos/rf-051-cms-home-e-curadoria.md",
-    "resoluções/rf-044-cu030-alteracoes-destacadas.pdf",
-    "resoluções/cu-030-gestao-de-agencias-CORRIGIDO.md",
-    "resoluções",
-    "Nova pasta"
+    "Bem-vindo.md"
   ]
 }

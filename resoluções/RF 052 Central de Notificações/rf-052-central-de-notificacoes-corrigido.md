@@ -158,9 +158,8 @@ Critérios de Aceitação
 | CA-052.18 | **[NOVO]** Criar campanha e clicar em "Salvar como Rascunho" sem definir data de envio       | Campanha salva com status "Rascunho"; pode ser editada e reaproveitada posteriormente                    |
 | CA-052.19 | **[NOVO]** Duplicar campanha com status "Enviada"                                             | Cópia criada com status "Rascunho"; todos os campos copiados; campanha original preservada               |
 | CA-052.20 | **[NOVO]** Segmentar campanha por "Turistas com opt-in ativo para marketing"                  | Estimativa de alcance exibe apenas turistas com opt-in de marketing ativo; campanha enviada somente a esse segmento |
-| CA-052.21: Duplicar campanha com segmentação por categoria de preferência que foi removida → formulário abre com aviso 'Segmentação inválida — revise antes de enviar'; estimativa de alcance exibe 0 |
-| CA-052.22: Tentar excluir template vinculado a regra de disparo ativa → sistema bloqueia
-exclusão e exibe lista das regras afetadas; template não excluído |
+| CA-052.21:| Duplicar campanha com segmentação por categoria de preferência que foi removida → |formulário abre com aviso 'Segmentação inválida — revise antes de enviar'; estimativa de alcance exibe 0 |
+| CA-052.22: |Tentar excluir template vinculado a regra de disparo ativa → |sistema bloqueia exclusão e exibe lista das regras afetadas; template não excluído     |
 
 Protótipo/Wireframe
 

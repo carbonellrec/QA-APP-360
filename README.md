@@ -1,63 +1,63 @@
-# QA-APP-360 · Verificação de Consistência de Requisitos
+# QA-APP-360 · Requirements Consistency Verification
 
-Repositório com os relatórios de verificação cruzada de consistência entre Requisitos Funcionais (RF), Regras de Negócio (RN), Casos de Uso (CU) e Critérios de Aceitação (CA) do projeto APP-360.
+Repository containing the cross-consistency verification reports between Functional Requirements (RF), Business Rules (RN), Use Cases (CU), and Acceptance Criteria (CA) for the APP-360 project.
 
-O objetivo é garantir que a documentação de requisitos esteja alinhada antes da entrega ao cliente e do início dos testes, identificando conflitos entre documentos, lacunas de rastreabilidade e pontos que precisam de decisão de negócio.
+The objective is to ensure that the requirements documentation is fully aligned before customer delivery and the start of testing, identifying conflicts between documents, traceability gaps, and points requiring business decisions.
 
-## Escopo coberto
+## Scope Covered
 
-| Módulo | Requisitos | Casos de Uso |
-|---|---|---|
-| Gestão de Agências | RF-044 | CU-030 |
-| Cadastro de Agência | RF-045 | CU-031 |
-| Gestão de Agentes | RF-046 | CU-032 |
-| Operação Comercial – Agência e Agente | RF-047 | CU-033 |
-| Comissionamento e Repasse | RF-048 | CU-034 |
-| Fila de Reembolsos (Administrador) | RF-049 | CU-035 |
-| CMS Institucional | RF-050 | CU-036 |
-| CMS Home e Curadoria | RF-051 | CU-037 |
-| Tela Inicial por Perfil | RF-056 | CU-039 |
-| Parceiros Comerciais | RF-057 | CU-040 |
+| Module | Requirements | Use Cases |
+| :--- | :--- | :--- |
+| Agency Management | RF-044 | CU-030 |
+| Agency Registration | RF-045 | CU-031 |
+| Agent Management | RF-046 | CU-032 |
+| Commercial Ops – Agency & Agent | RF-047 | CU-033 |
+| Commissioning & Payout | RF-048 | CU-034 |
+| Refund Queue (Admin) | RF-049 | CU-035 |
+| Institutional CMS | RF-050 | CU-036 |
+| Home CMS & Curation | RF-051 | CU-037 |
+| Initial Screen per Profile | RF-056 | CU-039 |
+| Business Partners | RF-057 | CU-040 |
 
-## Metodologia
+## Methodology
 
-Cada relatório cruza o conteúdo de RF, RN, CU e CA relacionados a um mesmo módulo e classifica cada achado em quatro categorias:
+Each report cross-references the content of RF, RN, CU, and CA related to the same module and classifies each finding into four categories:
 
-- ✓ **Consistente** — o comportamento está descrito de forma coerente entre os documentos.
-- ■ **Ponto de atenção** — comportamento não é contraditório, mas está incompleto, ambíguo ou sem CA de cobertura.
-- ✗ **Inconsistência** — os documentos descrevem o mesmo comportamento de formas conflitantes.
-- 💡 **Sugestão** — melhoria de clareza ou de cobertura de testes, sem impacto funcional imediato.
+- ✓ **Consistent** — behavior is described coherently across documents.
+- ■ **Attention Point** — behavior is not contradictory but is incomplete, ambiguous, or lacks coverage in CA.
+- ✗ **Inconsistency** — documents describe the same behavior in conflicting ways.
+- 💡 **Suggestion** — clarity or test coverage improvement, with no immediate functional impact.
 
-Os achados são priorizados em **P1 (crítico — corrigir antes da entrega)**, **P2 (importante — próxima revisão)** e **P3 (melhoria — opcional)**.
+Findings are prioritized as **P1 (Critical — fix before delivery)**, **P2 (Important — next review)**, and **P3 (Improvement — optional)**.
 
-## Relatórios
+## Reports
 
-| Arquivo | Módulos | Data | ✓ | ■ | ✗ | 💡 |
-|---|---|---|---|---|---|---|
-| `relatorio-verificacao-rfs-cus.pdf` | RF-044–RF-057 / CU-030–CU-040 (visão geral) | 22/06/2026 | 8 | 11 | 5 | 6 |
-| `verificacao-rf044-rf047.pdf` | RF-044 · RF-045 · RF-046 · RF-047 | 27/06/2026 | 8 | 6 | 4 | – |
-| `verificacao-rf048-rf049-cu034-cu035.pdf` | RF-048 · RF-049 / CU-034 · CU-035 | 27/06/2026 | 11 | 4 | 2 | 3 |
-| `verificacao-rf050-rf051-cu036-cu037.pdf` | RF-050 · RF-051 / CU-036 · CU-037 | 28/06/2026 | 15 | 3 | 1 | 2 |
+| File | Modules | Date | ✓ | ■ | ✗ | 💡 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| `relatorio-verificacao-rfs-cus.pdf` | RF-044–RF-057 / CU-030–CU-040 (Overview) | 06/22/2026 | 8 | 11 | 5 | 6 |
+| `verificacao-rf044-rf047.pdf` | RF-044 · RF-045 · RF-046 · RF-047 | 06/27/2026 | 8 | 6 | 4 | – |
+| `verificacao-rf048-rf049-cu034-cu035.pdf` | RF-048 · RF-049 / CU-034 · CU-035 | 06/27/2026 | 11 | 4 | 2 | 3 |
+| `verificacao-rf050-rf051-cu036-cu037.pdf` | RF-050 · RF-051 / CU-036 · CU-037 | 06/28/2026 | 15 | 3 | 1 | 2 |
 
-Os três últimos relatórios são a reverificação, módulo a módulo, dos pontos levantados no relatório geral de 22/06.
+The last three reports are the re-verification, module by module, of the points raised in the 06/22/2026 general report.
 
-## Principais inconsistências críticas (P1)
+## Critical Inconsistencies (P1)
 
-- **RF-045 vs. RF-044** — status "Ativa" no cadastro manual (RF-045.40) precisava de nota diferenciando esse fluxo do fluxo de aprovação de auto-cadastro (RF-044.26 → "Aguardando Contrato"). Texto de RF-045.40, RN-045.04, CA-045.04 e CA-045.19 estava incompleto/contraditório quanto a "acesso ao backoffice".
-- **RF-047.26 → RF-049** — cancelamento parcial pós-24h é encaminhado para a fila de reembolsos, mas o RF-049 foi modelado para pedidos inteiros, sem granularidade por ingresso individual.
-- **RF-049.33 → RF-048** — aprovação de reembolso na fila não define o impacto no comissionamento da agência/agente (gap entre os dois módulos).
-- **RF-052** — "Lembrete de Visita" classificado como Opt-in com SLA de 15 min pode ser inadequado ao contexto (lembrete sensível a horário); precisa validação com o cliente.
-- **RF-056** — Tabela de Menus não lista os módulos disponíveis para o perfil Agente.
-- **RF-057 / RF-045** — terminologia divergente ("Substatus da Agência" vs. "Substatus de Operação") entre documentos que descrevem o mesmo conceito.
-- **RF-051 / RN-051** — sem SLA definido para expiração do cache de avaliações do Google em caso de falhas consecutivas de sincronização.
+- **RF-045 vs. RF-044** — "Active" status in manual registration (RF-045.40) needed a note differentiating it from the self-registration approval flow (RF-044.26 → "Awaiting Contract"). Text in RF-045.40, RN-045.04, CA-045.04, and CA-045.19 was incomplete/contradictory regarding "backoffice access".
+- **RF-047.26 → RF-049** — partial cancellation post-24h is sent to the refund queue, but RF-049 was modeled for entire orders, lacking granularity per individual ticket.
+- **RF-049.33 → RF-048** — refund approval in the queue does not define the impact on agency/agent commission (gap between modules).
+- **RF-052** — "Visit Reminder" classified as Opt-in with a 15-minute SLA may be inappropriate for the context (time-sensitive reminder); needs client validation.
+- **RF-056** — Menu table does not list modules available for the Agent profile.
+- **RF-057 / RF-045** — terminology divergence ("Agency Substatus" vs. "Operation Substatus") between documents describing the same concept.
+- **RF-051 / RN-051** — no SLA defined for Google review cache expiration in case of consecutive synchronization failures.
 
-A lista completa de achados, com referências exatas a RF/RN/CU/CA e sugestões de correção, está em cada relatório individual.
+The complete list of findings, with exact references to RF/RN/CU/CA and correction suggestions, is in each individual report.
 
-## Como contribuir / dar sequência
+## How to Contribute / Next Steps
 
-1. Priorizar a resolução dos itens **P1** listados em cada relatório antes da entrega ao cliente.
-2. Ao corrigir um requisito, atualizar a referência cruzada correspondente nos demais documentos apontados como inconsistentes.
-3. Gerar uma nova rodada de verificação após as correções e versionar o relatório atualizado nesta pasta.
+1. Prioritize resolving **P1** items listed in each report before delivery.
+2. When correcting a requirement, update the corresponding cross-reference in the other documents pointed out as inconsistent.
+3. Generate a new verification round after corrections and version the updated report in this folder.
 
 ---
-*Relatórios gerados a partir de análise cruzada dos documentos de requisitos, casos de uso e critérios de aceitação do projeto APP-360.*
+*Reports generated based on cross-analysis of APP-360 project requirements documents, use cases, and acceptance criteria.*
